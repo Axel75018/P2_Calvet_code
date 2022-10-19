@@ -1,13 +1,15 @@
-h1.em {
+/** Commun font etc.. **********************************/
+h1{
     font-size: 1.38em;
     font-weight: 700;
+    margin-left: 55px;
 }
-h2.em {
+h2{
     font-size: 1em;
     font-weight: 700;
 }
 
-h3.em {
+p.texte {
     font-size: 1em;
     font-weight: 400;
 }
@@ -34,8 +36,7 @@ header{
 
 header nav ul li {
     display: inline;
-    list-style: none;
-    /*margin : 0 77px 0 0px;*/
+    list-style: none;    
 
 }
 
@@ -49,3 +50,10 @@ header nav ul li a:hover {
     color: #0065fc;
     border-top: solid 2px;    
 }
+/** Recherche **********************************/
+section#recherche {padding: 0 0 0 49px;}
+/*section#recherche div#rechercheGauche {}*/
+section#recherche h1 {margin:0 0 0 0;}
+section#recherche p.texte { margin: 7px 0 0 6px;}
+/*section#recherche div#boutonRecherche input#ville {
+    }*/
