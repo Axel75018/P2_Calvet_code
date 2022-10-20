@@ -4,81 +4,92 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Booki</title>
-        <meta name="description" content="Trouvez votre hébergement pour des vacances de rêve En plein centre-ville ou en pleine nature">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
-<script src="https://kit.fontawesome.com/0f44e6cbba.js" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <!--<h1>Text style</h1>
-        <h1 class="em">Text style em h1</h1>
-        <h2 >Text style</h2>
-        <h2 class="em">Text style em h2</h2>
-        <h3>Text style</h3>
-        <h3 class="em">Text style em h3</h3>
-        <ul>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Booki</title>
+    <meta
+      name="description"
+      content="Trouvez votre hébergement pour des vacances de rêve En plein centre-ville ou en pleine nature"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/0f44e6cbba.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+  
+        <!--<ul>
             <li><i class="fa-solid fa-dog"></i></li>
             <li><i class="fa-solid fa-info"></i></li>
             <li><i class="fa-solid fa-star"></i></li>
             <li><i class="fa-solid fa-person"></i></li>
             <li><i class="fa-solid fa-chart-line"></i></li>
+            <li><i class="fa-solid fa-money-bill-wave"></i></li>
 
-        </ul> -->
+        </ul> --->
     <div id="wrapper">
-<!----Header---------------------------------->
-        <header>
-<a href="#"><img id="logoH"src="images/logo/Booki.png" alt="Booki" ></a>
-            <nav>
-                <ul>
-                    <li><a class="active" href="#">Hébergements</a></li>
-                    <li><a href="#">Activités</a></li>
-                </ul>
+      <!----Header---------------------------------->
+      <header>
+        <a href="#"
+          ><img id="logoH" src="images/logo/Booki.png" alt="Booki"
+        /></a>
+        <nav>
+          <ul>
+            <li><a class="active" href="#">Hébergements</a></li>
+            <li><a href="#">Activités</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <!-----------Rechercherche------------------------->
+        <section id="recherche">
+          <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+          <p class="texte">En plein centre-ville ou en pleine nature</p>
+          <div id="boutonRecherche">
+            <div id="rechercheGauche">
+              <img src="/images/deco/map-marker-alt.png" alt="Rechercher" />
+            </div>
+            <form method="get">
+              <input
+                id="ville"
+                type="text"
+                name="ville"
+                value="Marseille, France"
+              />
+              <input id="bouton" type="submit" />
+            </form>            
+          </div>
+         <!---------------------filtre----------------------------------->
+         
+         <div id="filtres">
+            <h1>Filtres</h1>    
+            <a href="#"><i class="fa-solid fa-money-bill-wave"></i>Economique</a> 
+            <a href="#"><i class="fa-solid fa-person"></i>Familial</a>
+            <a href="#"><i class="fa-solid fa-heart"></i>Romantique</a> 
+            <a href="#" class="active"><i class="fa-solid fa-dog"></i>Animaux autorisés</a>
+          </div> 
+        </section>
+        <section id="hebergement"></section>
+        <section id="populaire"></section>
+        <section id="activité"></section>
+      </main>
+      <footer></footer>
 
-            </nav>
-        </header>
-        <main>
-<!-----------Rechercherche------------------------->
-            <section id="recherche">
-                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-                <p class="texte">En plein centre-ville ou en pleine nature</p>
-                <div id="boutonRecherche">
-                    <div id="rechercheGauche"><img src="/images/deco/map-marker-alt.png" alt="Rechercher"></div>
-                    <form method="get">
-                        <input id="ville" type="text" name="ville" value="Marseille, France"/>
-                        <input id="bouton"type="submit">
-
-                    </form>
-
-                </div>
-
-            </section>
-            <section id="hebergement">
-
-            </section>
-            <section id="populaire">
-
-            </section>
-            <section id="activité">
-
-            </section>
-
-        </main>
-        <footer>
-
-        </footer>
-
-
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-
+      <!--[if lt IE 7]>
+        <p class="browsehappy">
+          You are using an <strong>outdated</strong> browser. Please
+          <a href="#">upgrade your browser</a> to improve your experience.
+        </p>
+      <![endif]-->
     </div>
-    </body>
+  </body>
 </html>
