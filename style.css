@@ -57,10 +57,11 @@ section#recherche div#boutonRecherche {
     flex-direction: row;
 }
 section#recherche div#rechercheGauche { 
-    display: inline;
     width: 52px;
     height: 51px;
-    background-image: url("/images/deco/rechercher_fond_gauche.png") ;
+    Background: #F2F2F2;
+    border: 1px solid #F2F2F2;
+    border-radius: 15px 0px 0px 15px;
     background-repeat: no-repeat;
     position:relative;
 
@@ -74,9 +75,8 @@ section#recherche div#rechercheGauche img {
 section#recherche h1 {margin:0 0 0 0;}
 section#recherche p.texte { margin: 7px 0 0 6px;}
 section#recherche div#boutonRecherche input#ville {
-    display: inline;
     float: left;
-    height: 46px;
+    height: 49px;
     font-size: 1em;
     font-weight: 700;
     padding-left: 1em;
@@ -85,11 +85,12 @@ section#recherche div#boutonRecherche input#ville {
 
     }
     section#recherche div#boutonRecherche input#bouton {
-    display: inline;
     float :left;
     height: 100%;
     background-color: #0065FC;
     border:#0065FC 1px solid;
-    border-radius: 0 4px 4px 0;
+    border-radius: 0px 15px 15px 0px;
     margin-left: 0px;
+    color: white;
+    font-weight: 700;
     }
