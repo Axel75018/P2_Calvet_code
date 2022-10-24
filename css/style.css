@@ -352,8 +352,7 @@ template {
 /** Commun font etc.. **********************************/
 h1 {
   font-size: 1.38em;
-  font-weight: 700;
-  margin-left: 55px;
+  font-weight: 700;  
 }
 h2 {
   font-size: 1em;
@@ -511,14 +510,16 @@ div#filtres button {
     color: black;
     background-color: white;
 }
+div#filtres button:hover {
+  background-color: #DEEBFF;
+}
+
 div#filtres button i {
     margin :0 15px 0 0px;
     color:#0065fc;
     font-size: 1.3em;
 }
-div#filtres button.active {
-    background-color: #DEEBFF;
-}
+
 /*---------- info --------------*/
 #info{
   display:flex;
@@ -541,5 +542,50 @@ i.fa-info {
     color: #0065fc;
     font-size: 10px;    
 }
+/*----------Hébergements--------*/
 
+article#hebergement {
 
+  width:65%;
+  background-color: #F2F2F2;
+  border-radius: 20px;
+  padding : 42px 40px 46px 40px;
+  
+}
+
+#listeHbergement {
+  display: flex;
+  flex-direction: row;
+}
+
+.card {
+  width: 25%;
+  background-color: white;
+  margin: 15px 15px 15px 0px;
+  border-radius: 20px;
+  padding :10px;
+  display: flex;
+  flex-direction: column;
+  
+
+}
+
+div.card figure {
+  margin:0px;
+  
+}
+
+div.card figure caption {
+  margin-left :24px;
+}
+
+div.card figure img {
+  width:100%;
+  border-radius: 20px 20px 0 0;
+  margin:0px auto ;
+}
+.
+/*-------populaire-----*/
+#populaire {
+  width :35%;
+}
