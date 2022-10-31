@@ -1,8 +1,4 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
 
 <head>
@@ -26,7 +22,7 @@
     <a href="#"><img id="logoH" src="images/logo/Booki.png" alt="Booki" /></a>
     <nav>
       <ul>
-        <li><a class="active" href="#hebergement">Hébergements</a></li>
+        <li><a class="active" href="#ancreHebergegement">Hébergements</a></li>
         <li><a href="#activite">Activités</a></li>
       </ul>
     </nav>
@@ -61,22 +57,23 @@
         <div id="filtres">
           <h2>Filtres</h2>
           <button id="money-bill"><i class="fa-solid fa-money-bill-wave"></i>
-            <h2>Economique</h2>
+            <span class="h2">Economique</span>
           </button>
           <button id="fa-person"><i class="fa-solid fa-person"></i>
-            <h2>Familial</h2>
+            <span class="h2">Familial</span>
           </button>
           <button id="fa-heart"><i class="fa-solid fa-heart"></i>
-            <h2>Romantique</h2>
+            <span class="h2">Romantique</span>
           </button>
           <button id="fa-dog" class="active"><i class="fa-solid fa-dog"></i>
-            <h2>Animaux autorisés</h2>
+            <span class="h2">Animaux autorisés</span>
           </button>
         </div>
+        </form>
 
         <!---------------------info----------------------------------->
         <div id="info">
-          <i class="fa-solid fa-info"></i>
+          <div id="cercle"><i class="fa-solid fa-info"></i></div>
           <h4> Plus de 500 logements sont disponibles dans cette ville</h4>
         </div>
     </section>
@@ -85,7 +82,7 @@
     <section id="hebergementEtPopulaire">
       <!------------------hebergement------------------------------------------------------->
       <div class="hebergement">
-        <h1>Hébergements à Marseille</h1>
+        <h1 id="ancreHebergegement">Hébergements à Marseille</h1>
         <div id="listeHebergement">
           <!---------------------------------------------card1-->
           <article class="card">
@@ -97,11 +94,14 @@
                   <h3>Auberge La Canebière</h3>
                 </figcaption>
               </figure>
+              <div class="textCard">
 
-              <p class="prix">Nuit à partir de 25<strong>€</strong></p>
+              <p >Nuit à partir de 25<strong>€</strong></p>
               <p class="etoile"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
                   class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star KO"></i></p>
-            </a>
+                </div>
+                </a>
+         
           </article>
           <!---------------------------------------------card2-->
           <article class="card">
@@ -113,11 +113,14 @@
                   <h3>Hôtel du port</h3>
                 </figcaption>
               </figure>
+              <div class="textCard">
 
               <p class="prix">Nuit à partir de 52<strong>€</strong></p>
               <p class="etoile"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
                   class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star KO"></i></p>
+                </div>
             </a>
+          
           </article>
           <!---------------------------------------------card3-->
           <article class="card">
@@ -129,11 +132,13 @@
                   <h3>Hôtel Les mouettes</h3>
                 </figcaption>
               </figure>
-
+              <div class="textCard">
               <p class="prix">Nuit à partir de 76<strong>€</strong></p>
               <p class="etoile"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
                   class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star KO"></i></p>
-            </a>
+              </div>
+                </a>
+          
           </article>
           <!---------------------------------------------card4-->
           <article class="card">
@@ -145,11 +150,16 @@
                   <h3>Hôtel de la mer</h3>
                 </figcaption>
               </figure>
+              <div class="textCard">
 
               <p class="prix">Nuit à partir de 46<strong>€</strong></p>
               <p class="etoile"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
                   class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star KO"></i></p>
+               </div>   
             </a>
+            
+          
+
           </article>
           <!---------------------------------------------card5-->
           <article class="card">
@@ -161,11 +171,13 @@
                   <h3>Auberge Le Panier</h3>
                 </figcaption>
               </figure>
+              <div class="textCard">
 
               <p class="prix">Nuit à partir de 23<strong>€</strong></p>
               <p class="etoile"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
                   class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star KO"></i></p>
-            </a>
+                </div>
+                </a>
           </article>
           <!---------------------------------------------card6-->
           <article class="card">
@@ -178,20 +190,27 @@
                   <h3>Hôtel Chez Amina</h3>
                 </figcaption>
               </figure>
+              <div class="textCard">
 
               <p class="prix">Nuit à partir de 96<strong>€</strong></p>
               <p class="etoile"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
                   class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star KO"></i></p>
-            </a>
+                </div>
+                </a>
+              
           </article>
-          <h2>Afficher plus</h2>
+          
           <!---------------------------------------------fin listeHebergement-->
         </div>
+        <a href="#"><h2>Afficher plus</h2></a>
         <!---------------------------------------------fin hebergement-->
       </div>
       <!------------------Populaire-->
       <aside class="hebergement" id="populaire">
-        <h1>Les plus populaires</h1>
+        
+        <div id="popTitre">
+          <h1>Les plus populaires</h1> <i class="fa-solid fa-chart-line"></i>
+        </div>
 
 
       </aside>
@@ -213,13 +232,6 @@
       <li>etc</li>
     </ul>
   </footer>
-
-  <!--[if lt IE 7]>
-        <p class="browsehappy">
-          You are using an <strong>outdated</strong> browser. Please
-          <a href="#">upgrade your browser</a> to improve your experience.
-        </p>
-      <![endif]-->
 
 </body>
 
