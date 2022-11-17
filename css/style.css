@@ -542,10 +542,84 @@ footer div li  {
     justify-content: space-around;
   
   }
-/*--------------------------------tablette-->=768 px-------------------------------*/ 
+/*--------------------------------tablette-->=768 px-----------------------------------------------*/ 
   @media only screen and (max-width: 767px)  {
-    body{
-       background-color: red;}
+    body {
+      padding:0;
+      width:100%;
     }
+    
+    header {
+      flex-direction: column;
+      align-items: center;
     }
- 
+    header a {
+      margin-top:21px;
+    }
+
+    header nav {
+      width:100%;
+      margin-top:28px;
+      display : flex;
+      flex-direction: row;
+    }
+    header nav ul {
+      display: flex;
+      flex-direction: row;
+      width:100%;
+      padding:0;
+      margin:0;
+    }
+    header nav ul li {
+      display: inline-block;
+      width:50%;
+      margin:0;
+      padding:0;
+    }
+    header nav ul li a{
+      display: flex;
+      justify-content: center;
+      width:100%;
+      padding : 0 0 22px 0;
+      margin:0;
+    }
+    header nav ul li a:hover {
+      border-top:0;
+      border-bottom: solid 3px;
+    }
+
+
+
+    /*-----------filtres********/
+section#recherche{
+  margin-top:31px;
+  padding: 0 20px;
+}
+section#recherche h4{ margin-top:13px;}
+
+section#recherche div#boutonRechercheDSK {
+  display: none;
+}
+
+div#filtres {
+  flex-direction: column;
+  margin-top: 34px;
+}
+
+    div#boutons {
+      flex-direction: column;
+      margin-top : 15px;
+      flex-wrap: wrap;
+
+    }
+    form div#filtres div#boutons button {
+      width :160px;
+      box-sizing: border-box;
+      
+    }
+    div#boutons button i, div#boutons button span.h2 {
+      font-size: 11px;
+    }
+    div#boutons button i {margin:0;}
+
+    }
