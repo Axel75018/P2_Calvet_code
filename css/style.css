@@ -130,7 +130,7 @@ input#ville {
  }
  ::placeholder{
   opacity: 1;
-  /*ff*/
+  
  }
  :-ms-input-placeholder { /* Internet Explorer 10-11 */
   color: black;
@@ -542,7 +542,7 @@ footer div li  {
     justify-content: space-around;
   
   }
-/*--------------------------------tablette-->=768 px-----------------------------------------------*/ 
+/*--------------------------------Mobile--<=767 px-----------------------------------------------*/ 
   @media only screen and (max-width: 767px)  {
     body {
       padding:0;
@@ -607,19 +607,112 @@ div#filtres {
 }
 
     div#boutons {
-      flex-direction: column;
+      flex-direction: row;
       margin-top : 15px;
+      justify-content: space-around;
+      gap:11px;
       flex-wrap: wrap;
 
     }
     form div#filtres div#boutons button {
-      width :160px;
+      width: 160px;
       box-sizing: border-box;
+      display: flex;
+      justify-content: start;
+      align-items: center;
       
     }
     div#boutons button i, div#boutons button span.h2 {
       font-size: 11px;
     }
-    div#boutons button i {margin:0;}
+    div#boutons button i {
+      margin-right: 8px;
+      font-size:18px
+    }
+
+    div#info {
+      margin-top: 43px ;
+      align-items:flex-start;
+    }
+    div#cercle {
+      margin-right: 11px;
+    }
+
+    div#cercle i.fa-info {
+      font-size:12px;
+      font-weight: 900;
+    }
+    section#recherche div#info h4 {
+      margin: 8px 0 0 0;
+      width: 100%;
+      height: 57px;
+    }
+    /************populair et heberge **********/
+    section#hebergementEtPopulaire {
+      flex-direction: column-reverse;
+      gap : 0 11px;
+    }
+    aside#populaire {
+      padding: 40px 20px 
+    }
+    aside.hebergement article.card {
+      width: 100%;
+    }
+    aside.hebergement article.card h3 {
+    font-size: 16px;
+    }
+    aside#populaire {
+      border-radius: 0;;
+    }
+    div.hebergement{
+      background-color: white;
+      padding: 0 20px;
+      margin-bottom: 47px;;
+    }
+    div#listeHebergement article.card {
+      width: 100%;
+      height:199px;
+    }
+    figcaption.h3 {
+      font-size: 15px;;
+
+    }
+    div.hebergement  {
+      
+    }
+    a#afficher {
+      display:none;
+    }
+    section#activite {
+      padding: 0 20px;
+      gap:0;
+    }
+    section#activite h1 {
+      width:40%;
+      margin:0;
+    }
+    section#activite h3 {
+      font-size: 15px;
+    }
+    section#activite div.card {
+      width: 100%;
+      height: 190px;
+    }
+    section#activite div.card img {
+      height: 134px;;
+    }
+    footer {
+      padding: 45px 20px;
+    }
+    footer {
+      flex-direction: column;
+    }
+    footer ul {
+      width: 100%;      
+    }
+    footer div#containerFooter {
+      flex-direction: column;
+      gap: 25px 0;
+    }
 
     }
