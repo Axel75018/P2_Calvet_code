@@ -508,7 +508,7 @@ footer div li  {
   }
   div#listePopulaire {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 11px 11px;
     flex-wrap: wrap;
   }
@@ -536,6 +536,11 @@ footer div li  {
   }
   footer div#containerFooter {
     width: 86%;
+  }
+  div#listeActivite {
+    gap :25px;
+    justify-content: space-around;
+  
   }
 /*--------------------------------tablette-->=768 px-------------------------------*/ 
   @media only screen and (max-width: 767px)  {
