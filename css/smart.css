@@ -1,0 +1,216 @@
+body {
+    padding:0;
+    width:100%;
+  }
+  
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+  header a {
+    margin-top:21px;
+  }
+
+  header nav {
+    width:100%;
+    margin-top:28px;
+    display : flex;
+    flex-direction: row;
+  }
+  header nav ul {
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    padding:0;
+    margin:0;
+    border-bottom : solid 3px #0065fc
+  }
+  header nav ul li {
+    display: inline-block;
+    width:50%;
+    margin:0;
+    padding:0;
+  }
+  header nav ul li a{
+    display: flex;
+    justify-content: center;
+    width:100%;
+    padding : 0 0 22px 0;
+    margin:0;
+  }
+  header nav ul li a:hover {
+    border-top:0;
+    
+  }
+
+/*------Recherche smart------*/
+
+  section#recherche div#boutonRechercheSMART {
+    display: flex;
+    width:100%;
+    flex-direction: row;
+
+
+  }
+  section#recherche div#boutonRechercheSMART button#loupe {
+    background-color: #0065fc;
+    border: #0065fc 1px solid;
+    border-radius: 0px 15px 15px 0px;
+    margin-left: 0px;
+    color: white;
+    font-weight: 700;  
+    width:19%;
+  
+    }
+
+    section#recherche div#boutonRechercheSMART section#recherche div.pin i {
+      background-color:#F2F2F2;
+      width:16%;
+    }
+    section#recherche div#boutonRechercheSMART input#villeS {
+      border : 1px solid #F2F2F2;
+      width:65%;      
+      padding-left: 16px;
+      font-weight: 700;
+      
+    }
+    section#recherche div#boutonRechercheSMART input#villeS::placeholder {
+      color: black;
+    }
+
+  /*-----------filtres********/
+section#recherche{
+margin-top:31px;
+padding: 0 20px;
+}
+section#recherche h4{ margin-top:13px;}
+
+section#recherche div#boutonRechercheDSK {
+display: none;
+}
+
+
+
+div#filtres {
+flex-direction: column;
+margin-top: 34px;
+}
+
+  div#boutons {
+    flex-direction: row;
+    margin-top : 15px;
+    justify-content: space-around;
+    gap:11px;
+    flex-wrap: wrap;
+    width: 100%;
+
+  }
+  form div#filtres div#boutons button {
+    width: 160px;
+    height:50px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    
+  }
+  div#boutons button i, div#boutons button span.h2 {
+    font-size: 11px;
+  }
+  div#boutons button i {
+    margin-right: 8px;
+    font-size:18px
+  }
+
+  div#info {
+    margin-top: 43px ;
+    align-items:flex-start;
+  }
+  div#cercle {
+    margin-right: 11px;
+  }
+
+  div#cercle i.fa-info {
+    font-size:12px;
+    font-weight: 900;
+  }
+  section#recherche div#info h4 {
+    margin: 8px 0 0 0;
+    width: 100%;
+    height: 57px;
+  }
+  /************populair et heberge **********/
+  section#hebergementEtPopulaire {
+    flex-direction: column-reverse;
+    gap : 0 11px;
+  }
+  aside#populaire {
+    padding: 40px 20px 
+  }
+  aside.hebergement article.card {
+    width: 100%;
+    height: 144px;;
+  }
+  aside.hebergement article.card h3 {
+  font-size: 16px;
+  }
+  aside#populaire {
+    border-radius: 0;;
+  }
+  div.hebergement{
+    background-color: white;
+    padding: 0 20px;
+    margin-bottom: 47px;;
+  }
+  div#listeHebergement article.card {
+    width: 100%;
+    height:199px;
+  }
+  figcaption.h3 {
+    font-size: 15px;;
+
+  }
+  h1#ancreHebergegement {
+    margin-top: 26px;;
+  }
+  div.hebergement  {
+    
+  }
+  a#afficher {
+    display:none;
+  }
+  section#activite {
+    padding: 0 20px;
+    gap:0;
+  }
+  section#activite h1 {
+    width:40%;
+    margin:0;
+  }
+
+  section#activite h3 {
+    font-size: 15px;
+  }
+  section#activite div.card a div.h3Activite {
+
+  }
+  section#activite div.card {
+    width: 100%;
+    height: 190px;
+  }
+  section#activite div.card img {
+    height: 134px;;
+  }
+  footer {
+    padding: 45px 20px;
+  }
+  footer {
+    flex-direction: column;
+  }
+  footer ul {
+    width: 100%;      
+  }
+  footer div#containerFooter {
+    flex-direction: column;
+    gap: 25px 0;
+  }

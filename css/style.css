@@ -1,9 +1,9 @@
 /**************Desktop >=992 px ***************/
 
-
+#boutonRechercheSMART {display: none;}
  /** Commun font etc.. **********************************/
 html {
-  background-color: #d9d9d9;
+  background-color: #F2F2F2;
 }
 body {
   max-width: 1400px;
@@ -41,7 +41,7 @@ a {text-decoration: none;
 }
 
 main {
-  margin : 0;
+  margin:30px 0 0 0;
   width: 100%;
 }
 button{box-sizing: border-box;}
@@ -87,31 +87,32 @@ header nav ul li a:hover {
   border-top: solid 3px;
 }
 /** Recherche **********************************/
-section#recherche {
-  margin:30px 0 0 0;
-  
-}
-section#recherche h1 {
-  margin-bottom:8px;
+
+section#recherche h4 {
+  margin-top:13px;
 }
 section#recherche div#boutonRechercheDSK {
   display: flex;
   flex-direction: row;
+  margin-top:20px;
 }
 
 
  div.pin {
-  width: 52px;
+  width: 50px;
   height: 49px;
   background: #f2f2f2;
   border: 1px solid #f2f2f2;
   border-radius: 15px 0px 0px 15px;
-  position: relative;
+  box-sizing: border-box;
   text-align: center;
 }
 section#recherche div.pin i {
     padding-top : 15px;
     font-size: 18px;
+}
+section#recherche div#boutonRechercheDSK input#ville::placeholder {
+  color: black;
 }
 
 section#recherche h3 {
@@ -122,25 +123,21 @@ form{
 }
 input#ville {
   float: left;
-  height: 47px;
-  font-weight: 700;
-  padding-left: 18px;
-  border: 1px solid #d9d9d9;
-  border-left : 0px;
+    height: 49px;
+    font-weight: 700;
+    padding-left: 18px;
+    border: 1px solid #F2F2F2;
+    border-left: 0px;
+    box-sizing: border-box;
+    width: 236px;
  }
  ::placeholder{
   opacity: 1;
   
  }
- :-ms-input-placeholder { /* Internet Explorer 10-11 */
-  color: black;
- }
- 
- ::-ms-input-placeholder { /* Microsoft Edge */
-  color: black;
- }
 
 #boutonRechercheDSK input#bouton {
+  width: 132px;
   float: left;
   height: 50px;
   background-color: #0065fc;
@@ -150,37 +147,12 @@ input#ville {
   color: white;
   font-weight: 700;
 }
-/*------Recherche smart------*/
-section#recherche div#boutonRechercheSMART {
-  display: flex;
-  flex-direction: row;
-}
-section#recherche div#boutonRechercheSMART button#loupe {
-  float: left;
-  height: 50px;
-  width: 49px;
-  background-color: #0065fc;
-  border: #0065fc 1px solid;
-  border-radius: 0px 15px 15px 0px;
-  margin-left: 0px;
-  color: white;
-  font-weight: 700;
-}
-section#recherche div#boutonRechercheSMART input#villeS {
-  float: left;
-  height: 47px;
-  font-size: 18px;
-  font-weight: 700;
-  padding-left: 18px;
-  border: 1px solid #d9d9d9;
-  border-left : 0px;
-  
-}
+
 
 /*-------------filtre-----------*/
 
 div#filtres {
-    margin-top: 10px;;
+    margin-top: 35px;
     display: flex;
     flex-direction: row;
     align-items : baseline;    
@@ -199,7 +171,7 @@ div#boutons {
 }
 div#filtres button {
     padding :10px 10px;
-    border: 2px solid #d9d9d9;
+    border: 2px solid #F2F2F2;
     border-radius: 25px 25px 25px 25px;
     text-decoration: none;
     
@@ -229,17 +201,18 @@ div#filtres button span.h2 {
   display:flex;
   flex-direction: row;
   align-items: center;
-  margin-top :10px;
+  margin-top :39px;
 }
 
 #info div#cercle {
-    display: flex;
-    justify-content: center;
-    border: 1px solid #d9d9d9;   
-    padding: 8px 10px ;
-    border-radius: 50%;
-    margin: 0 6px 8px 0;
+  display: flex;
+  justify-content: center;
+  border: 1px solid #F2F2F2;
+  padding: 8px 10px;
+  border-radius: 50%;
+  margin: 0 6px 0 0;
     }
+
   section#recherche div#info h3 {   
     margin:0;
   }
@@ -251,10 +224,9 @@ i.fa-info {
 /*----------Hébergements--------*/
 section#hebergementEtPopulaire
 {
-  
+  margin-top: 38px;
   display: flex;
   flex-direction: row;
-  margin-top :5px ;
   justify-content: space-between;
   flex-wrap: wrap;
   
@@ -308,7 +280,7 @@ div#listeHebergement article.card {
   box-shadow: 0 16px 24px 0 rgba(0,0,0,0.2);
 }
 .card a{
-  height: 100%;
+  /*height: 100%;*/
   color:inherit;
   text-decoration: none;
 
@@ -354,11 +326,12 @@ article.card div p.etoile {
   color: #0065fc;
   font-size: 12px;
   
+  
 }
 
 
 article.card p.etoile i.KO {
-  color:#d9d9d9;
+  color:#F2F2F2;
 }
 /*-------populaire-----*/
 aside#populaire {
@@ -377,6 +350,7 @@ aside#populaire {
   flex-direction: row;
   justify-content: space-between;
   align-items: baseline;
+  
 }
 
 #popTitre i { color: #0065fc;}
@@ -415,8 +389,7 @@ aside.hebergement article.card img {
 aside.hebergement article.card div.textCard {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  paddin-right:16px;
+  justify-content: space-between;  
 
 } 
   
@@ -492,227 +465,3 @@ footer div li  {
   margin: 0 0 12px 0;
   padding: 0;
 }
-/*************************************************************************Tablette*******************************************/
-@media only screen and (max-width: 991px)  {
-  
-  section#hebergementEtPopulaire {
-    flex-direction: column;
-    gap: 50px 0;
-  }
-  div#boutons {width :100%;}
-  div.hebergement {
-    width: 100%;
-  }
-  aside#populaire {
-    width:100%;
-  }
-  div#listePopulaire {
-    flex-direction: row;
-    justify-content: space-around;
-    gap: 11px 11px;
-    flex-wrap: wrap;
-  }
-  aside.hebergement article.card {
-    width: 252px;
-  }
-  aside.hebergement article.card h3 {
-    font-size: 14px;
-  }
-  aside.hebergement article.card p {
-    font-size: 13px;
-  }
-  
-  section#activite div.card {
-    height: 267px;
-    width: 182px;
-  }
-  
-  section#activite div.card img {
-    height: 211px;
-    margin-bottom: 10px;
-  }
-  section#activite div.card h3 {
-    margin: auto 0 auto 19px;
-  }
-  footer div#containerFooter {
-    width: 86%;
-  }
-  div#listeActivite {
-    gap :25px;
-    justify-content: space-around;
-  
-  }
-/*--------------------------------Mobile--<=767 px-----------------------------------------------*/ 
-  @media only screen and (max-width: 767px)  {
-    body {
-      padding:0;
-      width:100%;
-    }
-    
-    header {
-      flex-direction: column;
-      align-items: center;
-    }
-    header a {
-      margin-top:21px;
-    }
-
-    header nav {
-      width:100%;
-      margin-top:28px;
-      display : flex;
-      flex-direction: row;
-    }
-    header nav ul {
-      display: flex;
-      flex-direction: row;
-      width:100%;
-      padding:0;
-      margin:0;
-    }
-    header nav ul li {
-      display: inline-block;
-      width:50%;
-      margin:0;
-      padding:0;
-    }
-    header nav ul li a{
-      display: flex;
-      justify-content: center;
-      width:100%;
-      padding : 0 0 22px 0;
-      margin:0;
-    }
-    header nav ul li a:hover {
-      border-top:0;
-      border-bottom: solid 3px;
-    }
-
-
-
-    /*-----------filtres********/
-section#recherche{
-  margin-top:31px;
-  padding: 0 20px;
-}
-section#recherche h4{ margin-top:13px;}
-
-section#recherche div#boutonRechercheDSK {
-  display: none;
-}
-
-div#filtres {
-  flex-direction: column;
-  margin-top: 34px;
-}
-
-    div#boutons {
-      flex-direction: row;
-      margin-top : 15px;
-      justify-content: space-around;
-      gap:11px;
-      flex-wrap: wrap;
-
-    }
-    form div#filtres div#boutons button {
-      width: 160px;
-      box-sizing: border-box;
-      display: flex;
-      justify-content: start;
-      align-items: center;
-      
-    }
-    div#boutons button i, div#boutons button span.h2 {
-      font-size: 11px;
-    }
-    div#boutons button i {
-      margin-right: 8px;
-      font-size:18px
-    }
-
-    div#info {
-      margin-top: 43px ;
-      align-items:flex-start;
-    }
-    div#cercle {
-      margin-right: 11px;
-    }
-
-    div#cercle i.fa-info {
-      font-size:12px;
-      font-weight: 900;
-    }
-    section#recherche div#info h4 {
-      margin: 8px 0 0 0;
-      width: 100%;
-      height: 57px;
-    }
-    /************populair et heberge **********/
-    section#hebergementEtPopulaire {
-      flex-direction: column-reverse;
-      gap : 0 11px;
-    }
-    aside#populaire {
-      padding: 40px 20px 
-    }
-    aside.hebergement article.card {
-      width: 100%;
-    }
-    aside.hebergement article.card h3 {
-    font-size: 16px;
-    }
-    aside#populaire {
-      border-radius: 0;;
-    }
-    div.hebergement{
-      background-color: white;
-      padding: 0 20px;
-      margin-bottom: 47px;;
-    }
-    div#listeHebergement article.card {
-      width: 100%;
-      height:199px;
-    }
-    figcaption.h3 {
-      font-size: 15px;;
-
-    }
-    div.hebergement  {
-      
-    }
-    a#afficher {
-      display:none;
-    }
-    section#activite {
-      padding: 0 20px;
-      gap:0;
-    }
-    section#activite h1 {
-      width:40%;
-      margin:0;
-    }
-    section#activite h3 {
-      font-size: 15px;
-    }
-    section#activite div.card {
-      width: 100%;
-      height: 190px;
-    }
-    section#activite div.card img {
-      height: 134px;;
-    }
-    footer {
-      padding: 45px 20px;
-    }
-    footer {
-      flex-direction: column;
-    }
-    footer ul {
-      width: 100%;      
-    }
-    footer div#containerFooter {
-      flex-direction: column;
-      gap: 25px 0;
-    }
-
-    }
