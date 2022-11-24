@@ -36,26 +36,26 @@ section#hebergementEtPopulaire {
     font-size: 13px;
   }
   
-  section#activite div.card {
+  section#activite article.card {
     height: 267px;
     width: 182px;
   }
   
-  section#activite div.card img {
+  section#activite article.card img {
     height: 211px;
     margin-bottom: 10px;
   }
-  section#activite div.card a div.h3Activite {
+  section#activite article.card a div.h3Activite {
     
     height: 42px;
     margin-top: -10px;
     display: flex;
     align-content: center;
 }
-section#activite div.card:nth-child(4) a div.h3Activite {
+section#activite article.card:nth-child(4) a div.h3Activite {
     width: 80%;
 }
-  section#activite div.card h3 {
+  section#activite article.card h3 {
     margin: auto 0 auto 19px;
   }
   footer div#containerFooter {

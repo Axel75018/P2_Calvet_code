@@ -194,11 +194,11 @@ margin-top: 34px;
   section#activite div.card a div.h3Activite {
 
   }
-  section#activite div.card {
+  section#activite article.card {
     width: 100%;
     height: 190px;
   }
-  section#activite div.card img {
+  section#activite article.card img {
     height: 134px;;
   }
   footer {
