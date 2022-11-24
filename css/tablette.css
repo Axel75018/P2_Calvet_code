@@ -2,16 +2,16 @@
 
 /*---max-width: 992px Tablette---------------------*/
 
-section#recherche div#boutonRechercheSMART {display: none;}
 
-section#hebergementEtPopulaire {
-    
-    flex-direction: column;
-    gap: 50px 0;
-  }
+
+
   div#boutons {width :86%;}
   div.hebergement {
     width: 100%;
+  }
+  section#hebergementEtPopulaire {
+    flex-direction: column;
+    gap: 50px 0;
   }
   aside#populaire {
     width:100%;
