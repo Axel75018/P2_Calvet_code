@@ -1,3 +1,8 @@
+
+section#recherche div#boutonRechercheDSK {
+  display: none;
+  }
+
 body {
     padding:0;
     width:100%;
@@ -85,11 +90,6 @@ padding: 0 20px;
 }
 section#recherche h4{ margin-top:13px;}
 
-section#recherche div#boutonRechercheDSK {
-display: none;
-}
-
-
 
 div#filtres {
 flex-direction: column;
@@ -100,14 +100,15 @@ margin-top: 34px;
     flex-direction: row;
     margin-top : 15px;
     justify-content: space-around;
-    gap:11px;
+    gap:10px;
     flex-wrap: wrap;
     width: 100%;
 
   }
   form div#filtres div#boutons button {
     width: 160px;
-    height:50px;
+    height: 50px;
+    padding: 19px 13px;
     box-sizing: border-box;
     display: flex;
     justify-content: start;
@@ -155,12 +156,12 @@ margin-top: 34px;
   font-size: 16px;
   }
   aside#populaire {
-    border-radius: 0;;
+    border-radius: 0;
   }
   div.hebergement{
     background-color: white;
     padding: 0 20px;
-    margin-bottom: 47px;;
+    margin-bottom: 47px;
   }
   div#listeHebergement article.card {
     width: 100%;
@@ -199,7 +200,7 @@ margin-top: 34px;
     height: 190px;
   }
   section#activite article.card img {
-    height: 134px;;
+    height: 134px;
   }
   footer {
     padding: 45px 20px;
