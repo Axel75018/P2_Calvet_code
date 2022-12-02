@@ -3,8 +3,15 @@
 /*---max-width: 992px Tablette---------------------*/
 
 
+section#recherche p {margin : 13px 0 0 0}
 
-
+div#filtres {
+  justify-content: inherit;
+  column-gap: inherit;
+}
+div#filtres h2 {
+  margin-right:15px;
+}
   div#boutons {width :86%;}
   div.hebergement {
     width: 100%;
